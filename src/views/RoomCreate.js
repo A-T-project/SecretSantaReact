@@ -18,6 +18,7 @@ const roomCreate = () => {
                             type="text"
                             placeholder="Ime sobe"
                             name="roomName"
+                            required
                         />
                     </div>
                     <div className="form-group">

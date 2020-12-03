@@ -18,6 +18,7 @@ const roomJoin = () => {
                             type="text"
                             placeholder="Šifra sobe"
                             name="roomUrl"
+                            required
                         />
                     </div>
                     <div className="form-group">

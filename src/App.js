@@ -7,12 +7,12 @@ import {
 } from 'react-router-dom';
 import Home from './views/Home';
 import RoomOptions from './views/RoomOptions';
-import JoinRoom from './views/RoomJoin';
-import CreateRoom from './views/RoomCreate';
+import RoomJoin from './views/RoomJoin';
+import RoomCreate from './views/RoomCreate';
 import Rooms from './views/Rooms';
 import Login from './views/Login';
 import Register from './views/Register';
-import Layout from './layout/Layout';
+import Navbar from './layout/Navbar';
 import './css/app.css';
 import './css/bootstrap.min.css';
 import './scripts/fontawesome.min';
@@ -20,23 +20,23 @@ import './scripts/fontawesome.min';
 function App() {
     return (
         <div className="main">
-            <Layout/>
+            <Navbar/>
             <Switch>
                 <Route
                     path="/" exact
                     component={Home}
                 />
                 <Route
-                    path="/roomOption" exact
+                    path="/roomOptions" exact
                     component={RoomOptions}
                 />
                 <Route
                     path="/roomJoin" exact
-                    component={JoinRoom}
+                    component={RoomJoin}
                 />
                 <Route
                     path="/roomCreate" exact
-                    component={CreateRoom}
+                    component={RoomCreate}
                 />
                 <Route
                     path="/rooms" exact

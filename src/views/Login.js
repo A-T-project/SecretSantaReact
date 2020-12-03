@@ -18,6 +18,7 @@ const login = () => {
                             type="text"
                             placeholder="Uporabniško Ime"
                             name="username"
+                            required
                         />
                     </div>
                     <div className="form-group">
@@ -26,6 +27,7 @@ const login = () => {
                             type="password"
                             placeholder="Geslo"
                             name="password"
+                            required
                         />
                     </div>
                     <div className="form-group">
